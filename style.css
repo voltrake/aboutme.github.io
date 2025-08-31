@@ -1,15 +1,56 @@
-/*Font*/
+/* Font */
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-/*Background*/
-body{
-  background: url('https://i.pinimg.com/1200x/7e/44/f9/7e44f998239a5905beb569005c7760ff.jpg') center center fixed;
-  background-size: 100%;
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
   font-family: 'Anonymous Pro', monospace;
   font-size: 15px;
   color: #FFFFFF;
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #000; /* Fallback color */
 }
 
+/* Background Image */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://i.pinimg.com/1200x/7e/44/f9/7e44f998239a5905beb569005c7760ff.jpg') no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+}
+
+/* Header Styling */
+#header {
+  padding: 2rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 2rem;
+  border-radius: 8px;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
   
   
