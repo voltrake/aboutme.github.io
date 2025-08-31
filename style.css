@@ -1,7 +1,15 @@
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /*Background*/
 body{
   background: url('https://i.pinimg.com/1200x/7e/44/f9/7e44f998239a5905beb569005c7760ff.jpg') center center fixed;
   background-size: 100%;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 15px;
+  color: #FFFFFF;
+	margin: 0;
+	padding: 0;
 }
+
   
   
