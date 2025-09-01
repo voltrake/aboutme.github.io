@@ -6,8 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body>  
-    <div id="header" role="banner" style="height: auto;">
+  <body>
+	  <header>
+		  <div id="header" role="banner" style="height: auto;">
 		<div class="header__top">
 			<nav role="navigation" aria-label="Pages">
 				<ul class="header__top">
@@ -17,10 +18,11 @@
 				</ul>
 			</nav>
 		</div>
-			
-      <h1>Welcome to </h1>
-      <p>This is some sample content to test the styling.</p>
-      <ul>
+
+		<div class="header__submenu">
+			<nav class="mega-menu" role="navigation" aria-label="Main navigation">
+				<div>
+					<ul>
         <li class="selected">
 				<a href="index.html">home</a>
 			</li>
@@ -36,6 +38,10 @@
 				<a href="contacts.html">contacts</a>
 			</li>
       </ul>
+				</div>
+			</nav>
     </div>
+	  </header>
+    
   </body>
 </html>
