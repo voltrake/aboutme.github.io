@@ -51,6 +51,39 @@ body::before {
 	width: 914px;
 }
 
+#header ul li {
+	background: url(../images/bg-menu.gif) repeat-x bottom center;
+	border-top: 2px solid #4f5342;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#header ul li a {
+	background: url(../images/menu-border.gif) no-repeat bottom right;
+	color: #93958b;
+	display: block;
+	font-size: 14px;
+	height: 42px;
+	letter-spacing: 1px;
+	line-height: 42px;
+	margin: 0;
+	padding: 0 31px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#header ul li.selected a {
+	color: #4c4d3d;
+	background: #e5e5e5;
+}
+
+#header ul li a:hover {
+	color: #c0c3b4;
+}
+
 h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
