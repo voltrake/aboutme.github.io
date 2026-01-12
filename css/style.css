@@ -21,7 +21,6 @@ body {
 }
 
 /* Background */
-/* Background */
 body::before {
   content: '';
   position: fixed;
@@ -31,7 +30,7 @@ body::before {
   height: 100%;
   background-color: #1a1a1a;
   /* Use your image here (local path or URL) */
-  background-image: url('../img/lynx.jpg'); /* if your CSS is in /css and image in /img */
+  background-image: url('Firstpagelynx.jpg'); /* if your CSS is in /css and image in /img */
   /* Or: background-image: url('PUT-DIRECT-IMAGE-URL-HERE'); */
   background-size: cover;
   background-position: center;
