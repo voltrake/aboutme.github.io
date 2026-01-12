@@ -223,14 +223,14 @@ header {
   }
 }
 
-/* About Section */
+/* About Section (existing) */
 .about-section {
   padding: 4rem 2rem;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  scroll-margin-top: 80px; /* To account for fixed header */
+  scroll-margin-top: 80px;
 }
 
 .about-container {
@@ -285,10 +285,10 @@ header {
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px; /* Space for fixed header */
+  scroll-padding-top: 100px;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments for about- */
 @media (max-width: 768px) {
   .about-container {
     padding: 2rem 1.5rem;
@@ -311,4 +311,78 @@ footer {
   padding: 1rem;
   margin-top: auto;
   backdrop-filter: blur(5px);
+}
+
+/* Map classify-* to the same styles so your current HTML works */
+.classify-section {
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-margin-top: 80px;
+}
+
+.classify-container {
+  max-width: 1000px;
+  text-align: left;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+  transition: all 0.3s ease;
+}
+
+.classify-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.classify-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.classify-content h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #ffffff, transparent);
+}
+
+.classify-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+}
+
+.classify-text p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+/* Responsive adjustments for classify- */
+@media (max-width: 768px) {
+  .classify-container {
+    padding: 2rem 1.5rem;
+  }
+  
+  .classify-content h2 {
+    font-size: 2rem;
+  }
+  
+  .classify-text {
+    font-size: 1rem;
+  }
 }
