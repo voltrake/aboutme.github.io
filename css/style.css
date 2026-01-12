@@ -21,6 +21,7 @@ body {
 }
 
 /* Background */
+/* Background */
 body::before {
   content: '';
   position: fixed;
@@ -29,12 +30,14 @@ body::before {
   width: 100%;
   height: 100%;
   background-color: #1a1a1a;
-  background-image: url('https://images.pexels.com/photos/14268991/pexels-photo-14268991.jpeg');
+  /* Use your image here (local path or URL) */
+  background-image: url('../img/lynx.jpg'); /* if your CSS is in /css and image in /img */
+  /* Or: background-image: url('PUT-DIRECT-IMAGE-URL-HERE'); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  filter: brightness(0.7);
+  filter: brightness(0.7); /* adjust 0.6–0.8 for readability */
   z-index: -1;
 }
 
